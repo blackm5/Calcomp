@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcomp</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Calcomp</h1>
+                <fieldset>
+                    <legend><label for="vina">Valor inicial</label></legend>
+                    <input type="number" name="ina" id="vina">
+                </fieldset>
+                <fieldset>
+                    <legend><label for="vmna">Aporte mensal</label></legend>
+                    <input type="number" name="vna" id="vmna">
+                </fieldset>
+                <fieldset>
+                    <legend><label for="tjna">Taxa de juros(%-mensal)</label></legend>
+                    <input type="number" name="tna" id="tjna">
+                </fieldset>
+                <fieldset>
+                    <legend><label for="pna">Período de Investimento (mensal)</label></legend>
+                    <input type="number" name="ppna" id="pna">
+                </fieldset>
+            <input type="button" value="Calcular" id="star">
+            <fieldset id="et">
+                <legend>Resultados</legend>
+                    <article id="sone"></article>  
+            </fieldset>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
