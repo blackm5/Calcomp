@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -10,25 +11,34 @@
     <title>Calcomp</title>
 </head>
 <body>
+    <header>
+        ATENÇÃO COM JUROS EXTRAORDINÁRIOS OU PROMESAS INALCANÇÁVEIS!
+    </header>
     <main>
         <section>
             <h1>Calcomp</h1>
                 <fieldset>
-                    <legend><label for="vina">Valor inicial</label></legend>
-                    <input type="number" name="ina" id="vina">
+                    <legend><label for="vina">Valor inicial ($)</label></legend>
+                    <input type="number" name="ina" id="vina" placeholder="100,00 $">
                 </fieldset>
                 <fieldset>
-                    <legend><label for="vmna">Aporte mensal</label></legend>
-                    <input type="number" name="vna" id="vmna">
+                    <legend><label for="vmna">Aporte mensal ($)</label></legend>
+                    <input type="number" name="vna" id="vmna" placeholder="50,00 $">
                 </fieldset>
                 <fieldset>
-                    <legend><label for="tjna">Taxa de juros(%-mensal)</label></legend>
-                    <input type="number" name="tna" id="tjna">
+                    <legend><label for="tjna">Taxa de juros (%-mensal)</label></legend>
+                    <input type="number" name="tna" id="tjna" placeholder="1,2%">
                 </fieldset>
                 <fieldset>
-                    <legend><label for="pna">Período de Investimento (mensal)</label></legend>
-                    <input type="number" name="ppna" id="pna">
+                    <legend><label for="pna">Tempo de Investimento (mensal)</label></legend>
+                    <input type="number" name="ppna" id="pna" placeholder="12 meses">
                 </fieldset>
+                <article id="me">
+                        Conversor (Anos para meses): 
+                        <input type="number" name="ana" id="ano" placeholder="1 ano">
+                        <input type="button" value="Converter" id="cal">
+                        <aside id="con"></aside>
+                </article>
             <input type="button" value="Calcular" id="star">
             <fieldset id="et">
                 <legend>Resultados</legend>

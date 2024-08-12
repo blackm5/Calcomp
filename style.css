@@ -9,20 +9,19 @@ body{
     background-size: cover;
     color: white;
 }
-main {
+header{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: 20px;
+}
+main{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-h1 {
-    font-size: 3em;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
 }
 section{
     width: 400px;
@@ -33,7 +32,16 @@ section{
     box-shadow: 0px 0px 50px rgb(0, 1, 59);
     text-shadow: 0px 0px 20px rgb(220, 217, 255);
 }
-fieldset {
+section > h1{
+    font-size: 3em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+fieldset{
     border-radius: 10px;
     max-width: 60vw;
     display: flex;
@@ -41,7 +49,7 @@ fieldset {
     justify-content: center;
     margin: auto;
 }
-input {
+input{
     width: 300px;
     border-radius: 5px;
     text-align: center;
@@ -49,6 +57,47 @@ input {
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+}
+#me{
+    color: black;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgba(237, 237, 255, 0.74);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 128);
+}
+#ano{
+    display: inline;
+    width: 60px;
+    margin-top: 5px;
+}
+#cal{
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline;
+    width: 65px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(195, 0, 255);
+    box-shadow: 0px 0px 10px black;
+}
+#cal:hover{
+    width: 70px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(130, 0, 170);
+}
+aside#con{
+    display: inline-flex;
+    align-items: right;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 5px;
+    width: 60px;
 }
 input#star{
     margin: auto;
@@ -68,9 +117,19 @@ input#star:hover{
     cursor: pointer;
     background-color: rgb(0, 0, 70);
 }
-
 fieldset#et {
     font-size: 1.5em;
     border-radius: 5px;
     text-align: center;
+}
+#vf{
+    color: rgb(255, 217, 217);
+}
+#ti{
+    color: rgb(255, 165, 0);
+    text-shadow: 0px 0px 20px rgb(255, 165, 0);
+}
+#tj{
+    color: rgb(255, 255, 0);
+    text-shadow: 0px 0px 20px rgb(255, 255, 0);
 }
