@@ -1,3 +1,5 @@
+
+/*
 let vi = window.document.querySelector('input#vina');
 let vm = window.document.querySelector('input#vmna');
 let tj = window.document.querySelector('input#tjna');
@@ -14,7 +16,7 @@ function clic() {
             Valor Final: 
                 <strong>
                     ${((Number(vi.value)*((1+(Number(tj.value)/100))**Number(pna.value)))+
-                    /*Aportes Mensais*/
+                    /*Aportes Mensais*//*
                     ((Number(vm.value)*(((1+(Number(tj.value)/100))**Number(pna.value))-1))/(Number(tj.value)/100))
                     ).toFixed(2).replace('.',',')}$
                 </strong><br>
@@ -30,7 +32,7 @@ function clic() {
                 <strong>
                     ${
                     (((Number(vi.value)*((1+(Number(tj.value)/100))**Number(pna.value)))+
-                    /*Aportes Mensais*/
+                    /*Aportes Mensais*//*
                     ((Number(vm.value)*(((1+(Number(tj.value)/100))**Number(pna.value))-1))/(Number(tj.value)/100))
                     )-((Number(vi.value)+(Number(vm.value)*Number(pna.value))))).toFixed(2).replace('.',',')}
                 </strong><br>
@@ -49,3 +51,4 @@ function cli() {
         `${Number(an.value)*12}`
     concl.appendChild(c)
 }
+*/
