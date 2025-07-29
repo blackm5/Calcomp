@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Calcomp</title>
 </head>
 <body>
+    <main>
+        <section>
+            <h1>Calculadora de Comissão</h1>
+            <aside id="flex">
+                <article id="buttons">
+                    <input type="button" value="Capital" class="button" id="capital"><br>
+                    <input type="button" value="Grande" class="button"  id="grande"><br>
+                    <input type="button" value="Média" class="button" id="media"><br>
+                    <input type="button" value="Pequena" class="button" id="pequena"><br>
+                    <input type="button" value="Micro" class="button" id="micro"><br>
+                </article>
+                <article id="command">
+                    
+                    <label>Litros: <br><input type="number" placeholder="(L)" id="litragem" class="command" required name="Litros (L)"></label><br>
+                    <label>Lucratividade: <input type="number" placeholder="(R$)" id="lucratividade" class="command" required></label>
+                </article>
+            </aside>
+            <aside id="flex_bottom">
+                <input type="button" value="Adicionar" class="command-trigger" id="command-trigger-add">
+                <input type="button" value="Comissão" class="command-trigger" id="command-trigger-commission">
+            </aside>
+            <article id="table">
+                <table id="tabelaEntradas">
+                    <thead>
+                        <tr>
+                            <th>Cidade</th><th>Tipo de Cidade</th><th>Litros</th><th>Comissão p/ Litragem</th><th>Multiplicador</th><th>Comissão</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </article>
+            <h2 id="total_commition"></h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
 <!--
     <header>
         !|ATENÇÃO COM JUROS EXTRAORDINÁRIOS OU PROMESAS INALCANÇÁVEIS|!
